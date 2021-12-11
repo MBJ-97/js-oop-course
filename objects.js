@@ -1,13 +1,14 @@
+// object literals using curly braces
 var userOne = {
-    email: 'ryu@ninjas.com',
-    name: 'Ryu',
+    // these are encapsulated props
+    email: 'mahdie@mail.com',
+    name: 'Mahdi',
+
+    //Now we can create methods such as login & logout
     login(){
-        console.log(this.email, 'has logged in');
+        console.log(this.email, 'has logged in'); // here this refers to this object that it lives in. If outside it would refer to the window object
     },
     logout(){
         console.log(this.email, 'has logged out');
     }
-};
-
-userOne.login();
-userOne.logout();
+}
